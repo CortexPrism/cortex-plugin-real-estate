@@ -1,0 +1,30 @@
+{
+  "name": "cortex-plugin-real-estate",
+  "version": "1.0.0",
+  "description": "Real Estate Investment Analyst — Zillow/Redfin/MLS data for cap rate, cash-on-cash, appreciation, and neighborhood trends",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-real-estate",
+  "homepage": "https://cortexprism.io/marketplace/plugins/real-estate",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    {
+      "name": "re_property_search",
+      "description": "Search properties with investment criteria",
+      "params": []
+    },
+    {
+      "name": "re_analyze_deal",
+      "description": "Analyze investment deal with financial metrics",
+      "params": []
+    },
+    { "name": "re_get_comps", "description": "Get comparable property sales", "params": [] },
+    { "name": "re_generate_report", "description": "Generate investment memo", "params": [] }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
